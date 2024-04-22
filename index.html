@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-
+    scale=1.0">
+    <title>web designer</title>
+    <link rel="stylesheet" href="style.css"><!-- linking style sheet to page-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> 
+    <!-- these various links are used to help me style my webpage more efficiently-->
+</head>
+<body>
+<section class="header">
+    <nav>
+        <div class="topbar" id="topbar">
+        <!-- the class top bar is the class i will use to style my navigation menu
+        i made sure to put this in the top right corner to avoid it from taking up
+    too much room on the page-->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="fees.html">FEES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact.php">CONTACT</a></li>
+                <li><a href="experience.html">EXPERIENCE</a></li>
+              
+            </ul>
+            <!-- This code creates a list <ul> containing a list item <li>) or each navigation link. Each list item 
+                contains an anchor <a> element, which represents a hyperlink to different HTML files-->
+            <!--- nav bar harvard reference
+            W3schools (2019). CSS Navigation Bar. 
+            [online] W3schools.com. 
+            Available at: https://www.w3schools.com/css/css_navbar.asp.‌-->
+            </form>
+    </div>
+    </nav>   
+</section>      
+
+    
+
+
+
+        <i class="fa fa-bars" onclick="showMenu" aria-hidden="true"></i></i>
+    </nav>
+<!--- the class text-box is used as my opening message, i made sure that this message is instantly introduced to the view
+to instantly draw their attention into my page-->
+
+<div class="text-box">
+    <h1>Success With Web Development Starts Here</h1>
+    <p>Making websites is now one of the easiest things in the world. You
+    just need to learn HTML, CSS,<br>Javascript and you are good to go.
+    </p>
+    <a href="about.html" class="hero-btn">Visit Us To Know More</a>
+</div>
+</section>`
+
+<!----------SERVICES----------->
+
+<section class="service">
+    <center>
+    <h1>Services We Offer</h1><center>
+    <p>Web Design & Development, Mobile App Development.</p>
+<!-- class called service-col displays the different services i offer for customer-->
+    <div class="row">
+        <div class="service-col">
+            <h3>Web Design & Development</h3>
+            <P>From Custom Sites To High-Performance eStores, Explore Our Website Design Services</P>
+        </div>
+        <div class="service-col">
+            <h3>Mobile App Development</h3>
+            <P>We take a strategic approach to web app creation to provide intuitive user experiences for optimal engagement and user satisfaction.</P>
+        </div>
+        <div class="service-col">
+            <h3>Website Marketing</h3>
+            <P>We craft digital marketing initiatives to help you grow brand awareness and reach your target audience..</P>
+        </div>
+
+    </div>
+
+
+</section>
+<!--class name called endmessage so i can edit the look and feel of this section in my style sheet-->
+<section class="endmessage" style="background-color: lightgrey;">
+    <h4>Where To Find Us?<h4>
+    <p>Instagram<br>Linkedin<br>Twitter<br>Facebook</p>
+    <p>Made By Joshua David Radley</p>
+  
+<!-- this message will be repeated at the end of each page as a footer message-->
+    </div>
+</section>
+  
+
+
+
+<!------------javascript for menu----------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+
+</script>
+<!--- showMenu() sets the CSS property right of 
+the element with the ID "navLinks" to "0", effectively sliding the element 
+into view from the right side of the screen.
+hideMenu() sets the CSS property right of the element with the ID "navLinks" to 
+"-200px", hiding the element by sliding it out of view to the right side of the screen.-->
+</body>
+</html>

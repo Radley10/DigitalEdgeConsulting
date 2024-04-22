@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-
+    scale=1.0">
+    <title>web designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> 
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+
+        <div class="topbar" id="topbar">
+        
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="fees.html">FEES</a></li>
+                <li><a href="services.html">SERVICES</a></li>             
+                <li><a href="contact.php">CONTACT</a></li>
+                <li><a href="experience.html">EXPERIENCE</a></li>
+            </ul>
+            </form>
+    </div>
+        <i class="fa fa-bars" onclick="showMenu" aria-hidden="true"></i></i>
+    </nav>
+    <h1>About Us</h1>
+
+
+
+</section>
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>We Are One Of Ireland's Greatest Consultancy Firms</h1>
+            <p>Hello! My name is Josh Radley and I am a 19 year old college student currently
+                studying BIS in UCC, I have proficient skills in the web development area and 
+                I am strongly motivated to make sure we give you a perfect and unique experience.
+
+                We understand that no two businesses are alike, which is why we take a personalized approach to every project. 
+                Whether you require a simple landing page or a complex e-commerce platform, we work closely with you to understand 
+                your goals and preferences. Our custom solutions are designed to reflect your brand identity and resonate with 
+                your target audience. In today's digital landscape, a professionally designed website is essential for success.
+                With our web development service, you can elevate your online presence, attract more customers, and achieve your 
+                business objectives. Don't settle for mediocrity – partner with us and unlock the full potential of the web.
+                Ready to take your online presence to the next level? Contact us today to discuss your project requirements and 
+                embark on a journey towards digital excellence.
+            </p>
+            <a href="home.html" class="hero-btn blue-btn">EXPLORE NOW</a>
+            <div class="contact-col">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                <h2>Leave a Comment</h2>
+                <hr>
+               </div>
+               <input type="hidden" name="access_key" value="6660582f-0d83-41fd-9963-26e067c15fbc">
+               <input type="text" name="name" placeholder="Name">
+                <br>
+                <input type="email" name="email" placeholder="Email">
+                <br>
+                <input type="message" name="message" placeholder="Message">
+                <br>
+                <button type="submit" class="hero-btn blue-btn">submit</button>
+                        <!-- submit button used to submit contact form-->
+                    </form>
+          <!-- Inside the "contact-col" div, there is a <form> element. The form's action attribute is set to "https://api.web3forms.com/submit", 
+        indicating that form submissions will be sent to this URL via the POST method.
+        Within the form, there is a <div> element with the class "contact-left-title", containing an <h2> heading with the text "Leave a Comment" 
+        and a <hr> element for styling.-->
+        </div>
+        </div>
+        <div class="about-col">
+            <img src="https://th.bing.com/th/id/OIP.TsN32ifP7XsOEhKZu9uOmQHaEK?w=268&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7">
+        </div>
+      
+    </div>
+
+</section>
+
+<section class="testimonials"> <!--The section is enclosed in a <section> element with the class "testimonials".-->
+    <h1>What Our Customers Say</h1>
+    <p>Read Our Reviews</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="https://www.bing.com/th/id/OIP.5A_p9dHTe_Aud8lCUeRaeQHaHe?w=241&h=183&c=7&r=0&o=5&dpr=1.4&pid=1.7">
+            <div>
+                <p>Very helpful and co-operative, I am glad i chose this agency.</p>
+                <h3>Ali McCarthy</h3>
+            </div>
+        </div>
+       
+        <div class="testimonial-col">
+            <img src="https://th.bing.com/th/id/OIP.mtKQsC_KdQUdYDd0Q9TRnQAAAA?w=177&h=181&c=7&r=0&o=5&dpr=1.4&pid=1.7">
+            <div>
+                <p>Gave me advice every step along the way, will definetly use again.</p>
+                <h3>Reuben Skuse</h3>
+            </div>
+        </div>
+    </div>
+<!--- Each testimonial card contains An <img> element with the source attribute pointing to an image file, 
+likely representing the customer's profile picture.A nested <div> element containing A <p> paragraph with 
+the actual testimonial text provided by the customer. An <h3> heading displaying the customer's name.-->
+<!-- referencing testimonial code --- www.w3schools.com. (n.d.). How To Create Testimonials. 
+    [online] Available at: https://www.w3schools.com/howto/howto_css_testimonials.asp.
+
+‌-->
+</section>
+
+
+
+<section class="endmessage" style="background-color: lightgrey;">
+    <h4>Where To Find Us?<h4>
+    <p>Instagram<br>Linkedin<br>Twitter<br>Facebook</p>
+    <p>Made By Joshua David Radley</p>
+  
+
+    </div>
+</section>
+  
+
+
+
+
+
+
+
+
+<!------------javascript for menu----------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+
+</script>
+<!--- showMenu() sets the CSS property right of 
+the element with the ID "navLinks" to "0", effectively sliding the element 
+into view from the right side of the screen.
+hideMenu() sets the CSS property right of the element with the ID "navLinks" to 
+"-200px", hiding the element by sliding it out of view to the right side of the screen.-->
+</body>
+</html>
